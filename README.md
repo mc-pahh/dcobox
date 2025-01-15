@@ -2,7 +2,7 @@
 
 ## DCO integration checklist:
 
-1. [ ] Add `DCO.md` to repo with the DCO:
+1. [x] Add `DCO.md` to repo with the DCO:
    ```
    Developer Certificate of Origin
    Version 1.1
@@ -39,7 +39,7 @@
        maintained indefinitely and may be redistributed consistent with
        this project or the open source license(s) involved.
    ```
-2. [ ] Add CONTRIBUTING.md to repo with instructions like: 
+2. [x] Add CONTRIBUTING.md to repo with instructions like: 
    ````md
    # DCO Sign Off
    
@@ -70,13 +70,13 @@
       Signed-off-by: Your Name your.email@example.com
       ```
    ````
-3. [ ] Add a DCO section to the README.md
+3. [x] Add a DCO section to the README.md
    ```md
    We use the Developer Certificate of Origin ([DCO.md](DCO.md)), this attests that you have the rights to submit your contribution under our project's license. We require all commits to be signed off with the DCO. 
 
-   Please consult [CONTRIBUTING.md](CONTRIBUTING.md) for addition details.
+   Please consult [CONTRIBUTING.md](CONTRIBUTING.md) for additional details.
    ```
-4. [ ] Add a `prepare-commit-msg` git hook to enforce sign-offs on commits:
+4. [x] Add a `prepare-commit-msg` git hook to enforce sign-offs on commits:
    ```sh
    #!/bin/bash
    
@@ -84,7 +84,6 @@
    # of any commit message that does not have one. This append happens after the git
    # default message is generated, but before the user is dropped into the commit
    # message editor.
-   
    ROOT=$(git rev-parse --show-toplevel)
    cd $ROOT
    
@@ -100,9 +99,9 @@
    fi
    ```
 5. [ ] Install [Github DCO Bot](https://probot.github.io/apps/dco/) **When PR is merged? To main?**
-   1. [ ] Add a `.github/dco.yml` file with
+   1. [x] Add a `.github/dco.yml` file with
       ```
       allowRemediationCommits:
         individual: true
       ```
-      to allow retroactive remediations
+      to allow retroactive remediations.
