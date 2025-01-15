@@ -74,7 +74,7 @@
    ```md
    We use the Developer Certificate of Origin ([DCO.md](DCO.md)), this attests that you have the rights to submit your contribution under our project's license. We require all commits to be signed off with the DCO. 
 
-   Please consult [CONTRIBUTING.md](CONTRIBUTING.md) for addition details.
+   Please consult [CONTRIBUTING.md](CONTRIBUTING.md) for additional details.
    ```
 4. [ ] Add a `prepare-commit-msg` git hook to enforce sign-offs on commits:
    ```sh
@@ -84,7 +84,6 @@
    # of any commit message that does not have one. This append happens after the git
    # default message is generated, but before the user is dropped into the commit
    # message editor.
-   
    ROOT=$(git rev-parse --show-toplevel)
    cd $ROOT
    
@@ -105,4 +104,4 @@
       allowRemediationCommits:
         individual: true
       ```
-      to allow retroactive remediations
+      to allow retroactive remediations.
