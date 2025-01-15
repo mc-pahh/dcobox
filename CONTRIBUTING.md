@@ -1,16 +1,16 @@
 # DCO Sign Off
 
-All commits must be signed off with the Developer Certificate of Origin (DCO).
+All commits must be signed off with the Developer Certificate of Origin ([DCO.md](DCO.md)).
 This attests that you have the rights to submit your contribution under our project's license.
 
 To sign off your commits:
 
-1. Configure your Git client with your real name and email:
+1. Configure your Git client with your github account details:
    ```
    git config --global user.name "Your Name"
    git config --global user.email "your.email@example.com"
    ```
-2. If you've configured git to use our hooks (`.githooks`), you're finished. Otherwise, either:
+2. If you've configured git to use our hooks (`.githooks`), you are now ready. Otherwise, either:
    1. use our `.githooks`:
       ```
       git config set core.hookspath .githooks
